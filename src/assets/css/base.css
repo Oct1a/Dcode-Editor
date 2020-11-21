@@ -1,0 +1,6 @@
+@import url('./normalize.css');
+body,
+html {
+  overflow: hidden;
+  /* background-color: #000; */
+}

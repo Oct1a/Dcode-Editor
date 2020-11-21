@@ -1,0 +1,45 @@
+{
+  "name": "Dcode-Editor",
+  "version": "0.1.0",
+  "private": false,
+  "author": {
+    "name": "Oct1a",
+    "email": "admin@dllca.cn",
+    "url": "http://"
+  },
+  "keywords": [
+    "h5 editor",
+    "h5",
+    "Vue",
+    "element-ui"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.14.1",
+    "less": "^3.12.2",
+    "less-loader": "^7.1.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vue-sketch-ruler": "^1.0.3",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "license": "GPL-3.0",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
