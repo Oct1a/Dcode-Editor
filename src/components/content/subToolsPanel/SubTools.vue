@@ -18,6 +18,7 @@ export default {
   .sub{
     width: 100%;
     border:1px dotted @bg;
+    cursor: pointer;
     .detail{
       overflow: hidden;
       border-radius: 5px;

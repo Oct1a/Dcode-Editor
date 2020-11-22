@@ -8,6 +8,5 @@ export default {
         resolve("已经完成")
       }, 1000);
     })
-
   }
 }

@@ -1,7 +1,3 @@
 export default {
-  counter: 1000,
-  info: {
-    age: 19,
-    name: 'kebe'
-  }
+  canvaSize: 100, //画布大小
 }

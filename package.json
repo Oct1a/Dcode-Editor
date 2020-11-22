@@ -24,7 +24,9 @@
     "less": "^3.12.2",
     "less-loader": "^7.1.0",
     "postcss-px-to-viewport": "^1.1.1",
+    "screenfull": "^5.0.2",
     "vue": "^2.6.11",
+    "vue-hot-key": "^0.1.2",
     "vue-router": "^3.2.0",
     "vue-sketch-ruler": "^1.0.3",
     "vuex": "^3.4.0"

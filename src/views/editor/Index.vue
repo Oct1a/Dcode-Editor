@@ -8,7 +8,7 @@
         <!-- 内容 -->
         <el-container>
           <!-- 左边面板 -->
-          <el-aside>
+          <el-aside style="overflow:visible;width:auto">
             <DPanel/>
           </el-aside>
           <!-- 编辑器（主要模块） -->
@@ -16,7 +16,7 @@
             <DMain />
           </el-main>
            <!-- 右边面板 -->
-          <el-aside style="overflow:visible;width:auto">
+          <el-aside class="aside-right">
             <DAttrPanel/>
           </el-aside>
         </el-container>
@@ -37,12 +37,21 @@ export default {
     DPanel,
     DMain,
     DAttrPanel
+  },
+  mounted () {
+    // console.log(this.$store.canvaSize)
   }
 }
 </script>
 
 <style lang="less" scoped>
-  .el-header{
-    box-shadow: 0px 1px 10px #ccc;
+  #Editor{
+    .el-header{
+      box-shadow: 0px 1px 1px #ccc;
+    }
+    /deep/.aside-right{
+      width:auto!important;
+      overflow:visible;
+    }
   }
 </style>

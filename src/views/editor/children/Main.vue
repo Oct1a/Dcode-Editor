@@ -1,7 +1,7 @@
 <template>
-    <div id="Main" ref="main">
+    <div id="Main" ref="main" :style="{zoom:$store.state.canvaSize +'%'}">
        <rule :w="ruleWidth" :h="ruleHeight" ref="rule"  />
-          <div class="canvas">
+          <div class="canvas" >
               <droppable
                 class="drop-box"
                 @dragstart="onDragStart"
@@ -19,13 +19,13 @@
 <script>
 import Rule from "views/editor/components/SketchRuleBg";
 import { Droppable } from 'components/common/drag'
-import Vue from 'vue'
 
 export default {
     data() {
         return {
           ruleWidth:0,
-          ruleHeight:0
+          ruleHeight:0,
+          // shrinkScale:100
         }
     },
     mounted() {
@@ -40,6 +40,11 @@ export default {
 
     },
     methods: {
+      handleChange(currentValue, oldValue){ //画布放大组件更改事件
+        // this.shrinkScale = currentValue +'%'
+        // this.$refs.num.value = currentValue +'%'
+        // console.log(this.$refs.num.value)
+      },
       onDragStart (params) {
         // console.log(params);
 
@@ -74,7 +79,7 @@ export default {
 
 <style lang="less" scoped>
   #Main{
-    height: 100vh;
+    height: 100%;
     .canvas{
       display: flex;
       justify-content: center;
@@ -107,11 +112,8 @@ export default {
       }
 
     }
-    // .drop-box{
-    //   height: 100%;
-    // }
   }
-  .frame{
+  .frame{ //屏幕尺寸
     border: 2px dotted #ccc;
     width: 100%;
     display: block;

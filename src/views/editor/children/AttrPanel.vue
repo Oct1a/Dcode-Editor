@@ -1,31 +1,37 @@
 <template>
-  <!-- <transition name="fade" > -->
       <div id="AttrPanel" :class="{PanelShrink:!show}">
-        <el-tabs v-model="activeName" type="border-card" @tab-click.native="handleClick" style="height:100vh">
-          <el-tab-pane label="页面设置" name="first">
+        <el-tabs v-model="activeName" type="border-card" @tab-click="handleClick" style="height:100vh">
+          <el-tab-pane label="页面设置" name="Page">
             <PageSetting/>
           </el-tab-pane>
-          <el-tab-pane label="页面管理" name="second">配置管理</el-tab-pane>
-          <el-tab-pane label="图层管理" name="third">角色管理</el-tab-pane>
+          <el-tab-pane label="页面管理" name="Multi">
+            <PageManage/>
+          </el-tab-pane>
+          <el-tab-pane label="图层管理" name="Layer">
+            <LayerManage/>
+          </el-tab-pane>
       </el-tabs>
       <div class="shrink" @click="handleShrink">
           <i :class="shrinkIcon"></i>
       </div>
     </div>
-  <!-- </transition> -->
-  <!--   -->
 </template>
 
 <script>
 import PageSetting from 'views/editor/attrPanel/PageSetting'
+import PageManage from 'views/editor/attrPanel/PageManage'
+import LayerManage from 'views/editor/attrPanel/LayerManage'
+
 export default {
   name:'AttrPanel',
   components: {
-    PageSetting
+    PageSetting,
+    PageManage,
+    LayerManage
   },
   data() {
       return {
-        activeName: 'first',
+        activeName: 'Page',
         show:true,
       };
     },
@@ -35,7 +41,7 @@ export default {
       },
       handleShrink(){ //收缩面板动画
         this.show = !this.show
-      }
+      },
     },
     computed: {
       shrinkIcon(){
@@ -50,6 +56,7 @@ export default {
    z-index:10;
    position: relative;
    height: calc(100vh - 100px);
+   transition: width 2s;
   .shrink{
     height: 80px;
     width: 20px;
@@ -67,8 +74,8 @@ export default {
   }
  }
  .PanelShrink{
-    width: 0px;
-    transform: translate(0px);
+   width: 0px;
+  //  transform: translate(0px);
 
  }
 </style>
