@@ -40,21 +40,21 @@
 |--Client
   |-- docs        --------预留编写项目文档目录
   |-- public      --------基础文件
-  |-- src					--------前端项目界面代码
-    |--assets					--------前端界面对应静态资源
-    |--common					--------公共方法
-    |--components			--------组件
-      |--common			  --------公共组件
-      |--content			--------内容组件
-    |--network			  --------网络请求
-    |--router					--------路由配置
-    |--store					--------vuex状态管理
-    |--views				  --------页面
-      |--editor				  --------编辑器页面
-      |--login				  --------登录页面
-    |--App.vue					--------App
-    |--main.js					--------入口文件
-  |-- babel.config.js	 --------babel配置文件
+  |-- src		  --------前端项目界面代码
+    |--assets	  --------前端界面对应静态资源
+    |--common	  --------公共方法
+    |--components --------组件
+      |--common	  --------公共组件
+      |--content  --------内容组件
+    |--network	  --------网络请求
+    |--router	  --------路由配置
+    |--store	  --------vuex状态管理
+    |--views	  --------页面
+      |--editor		--------编辑器页面
+      |--login		--------登录页面
+    |--App.vue		--------App
+    |--main.js		--------入口文件
+  |-- babel.config.js  --------babel配置文件
   |-- vue.config.js	   --------vue配置文件
 
 ```
