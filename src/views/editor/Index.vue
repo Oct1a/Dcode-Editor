@@ -20,6 +20,7 @@
             <DAttrPanel/>
           </el-aside>
         </el-container>
+        <DialogSetting/>
       </el-container>
   </div>
 </template>
@@ -30,13 +31,16 @@ import DPanel from './children/Panel' //左边组件栏
 import DMain from './children/Main' //主体编辑区
 import DAttrPanel from './children/AttrPanel' //右边属性栏
 
+import DialogSetting from 'components/content/subToolsPanel/PopupSetting' //弹窗属性设置
+
 export default {
   name:'Index',
   components:{
     DHeader,
     DPanel,
     DMain,
-    DAttrPanel
+    DAttrPanel,
+    DialogSetting
   },
   mounted () {
     // console.log(this.$store.canvaSize)
@@ -49,9 +53,11 @@ export default {
     .el-header{
       box-shadow: 0px 1px 1px #ccc;
     }
+
     /deep/.aside-right{
       width:auto!important;
       overflow:visible;
     }
+
   }
 </style>

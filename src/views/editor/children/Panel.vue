@@ -2,43 +2,32 @@
     <div id="Panel" :style="{width:(!isShowPanel ? 0 : 300)+ 'px'}">
       <el-scrollbar style="height:100%">
         <el-tabs tab-position="left" :stretch=true :lazy=true >
-          <el-tab-pane>
-              <!-- 基础组件 -->
-              <span slot="label"><i class="el-icon-s-opportunity" ></i></span>
-            <base-coponents/>
-          </el-tab-pane>
-          <el-tab-pane>
-            <!-- 媒体组件 -->
-            <span slot="label"><i class="el-icon-picture-outline-round"></i> </span>
-            <media-coponents/>
-          </el-tab-pane>
-          <el-tab-pane>
-            <!-- 图表组件 -->
-            <span slot="label"><i class="el-icon-s-data"></i> </span>
+          <el-tab-pane v-for="item in comp_data" :key="item.type">
+              <span slot="label"><i :class="item.icon" ></i></span>
+              <basic-coponents :compsList="item.components" :title="item.title"/>
           </el-tab-pane>
         </el-tabs>
       </el-scrollbar>
       <!-- 面板收缩 -->
-      <div class="shrink" @click="handleShrink">
-          <i :class="shrinkIcon"></i>
-      </div>
+      <div class="shrink" @click="handleShrink"><i :class="shrinkIcon"></i></div>
     </div>
 </template>
 
 <script>
-import BaseCoponents from 'views/editor/toolsPanel/Base/Base'
-import MediaCoponents from 'views/editor/toolsPanel/Media/Media'
-// import Ba from '../ToolsPanel/Base/Base'
+import BasicCoponents from 'components/content/subToolsPanel/Paneltem' //左侧面板的组件渲染
+
+import { config } from 'common/mixin/mixin' //组件数据
 
 export default {
   name:'Panel',
+  mixins:[config],
   data() {
     return {
-      isShowPanel:true
+      isShowPanel:true //面板收缩变量
     }
   },
   methods: {
-    handleShrink() { //收缩面板
+    handleShrink() { //点击收缩面板
       this.isShowPanel = !this.isShowPanel
     },
   },
@@ -47,10 +36,7 @@ export default {
       return !this.isShowPanel ? 'el-icon-d-arrow-right' : 'el-icon-d-arrow-left'
     }
   },
-  components: {
-   BaseCoponents,
-   MediaCoponents
-  }
+  components: {BasicCoponents}
 }
 </script>
 

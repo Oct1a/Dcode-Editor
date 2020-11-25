@@ -1,6 +1,7 @@
 <template>
     <div id="Main" ref="main" :style="{zoom:$store.state.canvaSize +'%'}">
-       <rule :w="ruleWidth" :h="ruleHeight" ref="rule"  />
+       <el-scrollbar style="height:100%">
+          <rule :w="ruleWidth" :h="ruleHeight" ref="rule"  />
           <div class="canvas" >
               <droppable
                 class="drop-box"
@@ -13,6 +14,7 @@
               <div class="edit"></div>
             </droppable>
           </div>
+       </el-scrollbar>
     </div>
 </template>
 
@@ -80,6 +82,9 @@ export default {
 <style lang="less" scoped>
   #Main{
     height: 100%;
+    /deep/.el-scrollbar__view{
+      height: 100%;
+    }
     .canvas{
       display: flex;
       justify-content: center;

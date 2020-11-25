@@ -1,6 +1,9 @@
-@import url('./normalize.css');
+@import './normalize.css';
 body,
 html {
   overflow: hidden;
   /* background-color: #000; */
 }
+
+
+/* li {} */

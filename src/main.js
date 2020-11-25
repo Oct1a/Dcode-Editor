@@ -8,9 +8,13 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 import hotKey from './common/keypress/keypress' //快捷键
 
+import utils from './common/utils/index'
+
 Vue.use(ElementUI)
 
 Vue.use(hotKey)
+
+Vue.use(utils)
 
 Vue.config.productionTip = false
 

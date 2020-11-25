@@ -1,5 +1,7 @@
 <template>
-  <h3>页面管理</h3>
+  <ul>
+    <li></li>
+  </ul>
 </template>
 
 <script>

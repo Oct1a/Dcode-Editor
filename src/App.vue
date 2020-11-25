@@ -44,11 +44,17 @@ export default {
       //     var scale = devicewidth / 1440;  // 分母——设计稿的尺寸
       //     document.body.style.zoom = scale;
       // }
-      // window.onload = window.onresize = function () {
+      // window.onload = window.onre  size = function () {
       //     bodyScale();
       // };
 
       },
+      mounted () {
+        // 禁用整个页面的右击事件
+          // document.oncontextmenu = () => {
+          //   return false
+          // }
+      }
 
   },
   computed: {
@@ -67,6 +73,6 @@ export default {
 }
 </script>
 
-<style>
-@import 'assets/css/base.css';
+<style lang="css">
+@import "assets/css/base.css";
 </style>

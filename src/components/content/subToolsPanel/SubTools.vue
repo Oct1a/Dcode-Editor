@@ -1,16 +1,19 @@
 <template>
-    <!-- 该组件是传递小组件  -->
+    <!-- 该组件是展示小组件用，可更改样式  -->
     <div class="sub">
         <div class="detail">
-          <img src="http://placehold.it/150x150/ff3333/ffffff" draggable="false">
+          <img :src="img" draggable="false">
         </div>
-      <div class="desc">轮播图组件</div>
+      <div class="desc">{{desc}}</div>
     </div>
 </template>
 
 <script>
 export default {
-
+  props: {
+    desc:String,
+    img:''
+  }
 }
 </script>
 <style lang="less" scoped>
