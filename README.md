@@ -79,7 +79,7 @@
 - [ ] 可编辑画布大小
 
 
-![](https://upload-images.jianshu.io/upload_images/1650654-08875854bf0ef478.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](./docs/images/Snipaste_2020-11-21_19-46-21.jpg)
 
 
 
