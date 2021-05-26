@@ -1,0 +1,14 @@
+{
+  "port": "4000",
+  "adminAccount": "admin",
+  "db": {
+    "servername": "127.0.0.1",
+    "DATABASE": "",
+    "port": 27017,
+    "user": "",
+    "pass": "",
+    "authSource": ""
+  },
+  "baseURL": "",
+  "tips": "该文件后期处理，client与server的配置信息整合一起"
+}
