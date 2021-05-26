@@ -80,8 +80,3 @@
 
 
 ![](./docs/images/Snipaste_2020-11-21_19-46-21.jpg)
-
-
-
-
-参考资料:[在Vue项目中使用snapshot测试](https://juejin.cn/post/6844903749375393800)
