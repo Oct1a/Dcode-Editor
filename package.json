@@ -7,6 +7,7 @@
     "server": "nodemon service/app.js dev -L",
     "build": "vue-cli-service build",
     "start": "pm2 start service/app.js",
+    "doc": "docsify serve docs",
     "h5-parse": "vue-cli-service build --target lib --name page-engine --dest service/public/engine_libs/h5-swiper engine-template/engine-h5-swiper/index.js"
   },
   "dependencies": {
@@ -59,12 +60,10 @@
     "babel-plugin-component": "^1.1.1",
     "babel-plugin-import": "^1.12.2",
     "babel-preset-env": "^1.7.0",
-    "chromedriver": "^89.0.0",
     "co": "^4.6.0",
     "debug": "^4.1.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "geckodriver": "^1.22.3",
     "html2canvas-proxy": "^1.0.1",
     "jsonwebtoken": "^8.5.1",
     "koa": "^2.10.0",
