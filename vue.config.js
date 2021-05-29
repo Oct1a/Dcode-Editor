@@ -20,6 +20,9 @@ module.exports = {
   devServer: devServer,
   // 输出文件目录
   assetsDir: "static",
+  outputDir: './service/public',
+  // publicPath: "./service/public",
+  publicPath: "./",
   // 修改 pages 入口
   pages: {
     index: {
@@ -52,7 +55,8 @@ module.exports = {
       .include.add(/common/).end()
       .use('babel')
       .loader('babel-loader')
-      .tap(options => {
+
+    .tap(options => {
         // 修改它的选项...
         return options
       })

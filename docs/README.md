@@ -1,5 +1,5 @@
-![编辑器页面](./doc/image/index.jpg)
-![登录界面](./doc/image/login.png)
+![编辑器页面](./static/image/index.jpg)
+![登录界面](./static/image/login.png)
 想完成但未完善问题（争取近期完善）：
 
 - [ ] 导入PSD角度问题
