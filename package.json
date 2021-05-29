@@ -3,8 +3,6 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "test:unit": "vue-cli-service test:unit",
-    "cypress": "cypress run --reporter=spec",
     "client": "vue-cli-service serve",
     "server": "nodemon service/app.js dev -L",
     "build": "vue-cli-service build",
