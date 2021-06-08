@@ -14,7 +14,7 @@
 
 ## 功能
 
-本项目是在[原开发者项目]([huangwei9527/quark-h5: 基于vue2 + koa2的 H5制作工具。让不会写代码的人也能轻松快速上手制作H5页面。类似易企秀、百度H5等H5制作、建站工具 (github.com)](https://github.com/huangwei9527/quark-h5))基础上进行改动，新增了一些功能，并稍微美化了一下。
+本项目是在[原开发者项目](https://github.com/huangwei9527/quark-h5)基础上进行改动，新增了一些功能，并稍微美化了一下。
 
 - [x] 拖拉组件至画布
 - [x] 面板可收缩展开
